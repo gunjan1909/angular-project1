@@ -1,5 +1,5 @@
 //header component
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 //import { Router } from '@angular/router';
 
 @Component({
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
+  @Output() featureSelected = new EventEmitter<string>();
   collapsed: boolean = false;
+  onSelect(arg: string) {
+    this.featureSelected.emit(arg);
+  }
 }
