@@ -5,6 +5,7 @@
    </div>
    <div class="col-md-7">
       <app-recipe-detail *ngIf="selectedRecipe; else infoText" [recipe]="selectedRecipe"></app-recipe-detail>
+      <!-- displays the text/ng-template instead of app-recipe detail if when no recipe is selected to dispay details of -->
       <ng-template #infoText>
          <p>Please select a recipe</p>
       </ng-template>

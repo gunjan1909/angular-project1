@@ -12,19 +12,6 @@ export class RecipeListComponent implements OnInit {
 
   recipes!: Recipe[];
 
-  /*recipes: Recipe[] = [
-    new Recipe(
-      'A Test Recipe',
-      'This is simply a test',
-      'https://static.toiimg.com/thumb/61050397.cms?imgsize=246859&width=800&height=800'
-    ),
-    new Recipe(
-      'A Test Recipe 2',
-      'This is simply a test 2',
-      'https://static.toiimg.com/thumb/61050397.cms?imgsize=246859&width=800&height=800'
-    ),
-  ];*/
-
   constructor(private recipeService: RecipeService) {}
 
   ngOnInit(): void {

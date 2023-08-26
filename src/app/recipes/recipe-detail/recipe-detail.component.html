@@ -1,11 +1,11 @@
 <div class="row">
    <div class="col-xs-12">
-      <img [src]="recipe?.imagePath" alt="{{recipe?.name}}" class="img-responsive">
+      <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive">
    </div>
 </div>
 <div class="row">
    <div class="col-xs-12">
-      <h1>Recipe Name: {{recipe?.name}}</h1>
+      <h1>Recipe Name: {{recipe.name}}</h1>
    </div>
 </div>
 <div class="row">
@@ -23,14 +23,14 @@
 </div>
 <div class="row">
    <div class="col-xs-12">
-      Description: {{recipe?.description}}
+      Description: {{recipe.description}}
    </div>
 </div>
 <div class="row">
    <div class="col-xs-12">
       Ingredients:
       <ul class="list-group ">
-         <li class="list-group-item ingredient-list-item" *ngFor="let ingredient of recipe?.ingredients">
+         <li class="list-group-item ingredient-list-item" *ngFor="let ingredient of recipe.ingredients">
             <div>{{ingredient.name}}</div>
             <div>|</div>
             <div>({{ingredient.amount}})</div>

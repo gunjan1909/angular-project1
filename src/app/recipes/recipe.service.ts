@@ -24,11 +24,13 @@ export class RecipeService {
 
   constructor(private slService: ShoppingListService) {}
 
+  //return recipe array
   getRecipes() {
     // return the copy of this array not the reference to original array so cant access this from outside
     return this.recipes.slice();
   }
 
+  //add ingredients to shopping list
   addIngredientsToSL(ing: Ingredient[]) {
     this.slService.addIngredients(ing);
   }

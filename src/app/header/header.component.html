@@ -7,6 +7,7 @@
          <a routerLink="/" class="navbar-brand">Recipe Book</a>
       </div>
       <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+         <!-- navigating between recipe and shopping-list for now -->
          <ul class="nav navbar-nav">
             <li><a (click)="onSelect('recipe')" href="#">Recipes</a></li>
             <li><a (click)="onSelect('shopping-list')" href="#">Shopping List</a></li>

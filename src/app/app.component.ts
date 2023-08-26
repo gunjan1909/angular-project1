@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Project1';
-  loadedFeature = 'recipe';
+  loadedFeature: string = 'recipe';
+  //for header navbar navigation from recipe to shopping list section
   onNavigate(event: string) {
     this.loadedFeature = event;
   }
